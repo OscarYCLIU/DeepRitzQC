@@ -18,7 +18,7 @@ class option:
         self.manualSeed = 20190820
         self.lr = 1e-3
         self.randomsample = False
-        self.num_iter = 1
+        self.num_iter = 15
         self.report_iter = 500
         self.m = 10            # number of neurons
         self.block_num = 4
