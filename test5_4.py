@@ -114,7 +114,7 @@ def training(network, optimizeru, args):
         # loss_f = np.zeros(max_iter_f)
         u_last = u
         u = network(vx_pt)
-        difference = torch.max(torch.abs(u_last - u))
+        difference = torch.max(torch.max(torch.abs(u_last - u)))
 
         if difference <= 1e-6:
             loss_record[i] = loss_last.detach().numpy()
